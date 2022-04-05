@@ -9,7 +9,6 @@ char regstr[MAXLINE];
 
 int main(){
 	int max=0;
-	
 while(1){
 	gets(line);
 	printf("line = %s\n", line);
@@ -23,13 +22,11 @@ while(1){
 	printf("regstr = %s\n",regstr);
 }
 	return 0;
-
-
 }
+
 void copy(char from[], char to[]){
 	int i=0;
 	while(from[i] = to[i] != '\0'){
 		i++;
 	}
-
 }
