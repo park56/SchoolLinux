@@ -18,7 +18,7 @@ int main(int argc, char **argv){
     }
 
     //file2
-    int fd2 = open(argv[2],O_WRONLY);
+    int fd2 = open(argv[2],O_WRONLY|O_CREAT,0777);
     if(fd1 == -1){
         perror("fd1 file open faile");
     }
