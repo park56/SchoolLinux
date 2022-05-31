@@ -31,6 +31,7 @@ int main() {
 
     STUDENT student = {};
 
+
     do{
         printf("검색하실 학번을 입력해 주세요");
         scanf("%d",&student.id);

@@ -1,7 +1,7 @@
 #include <unistd.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <sys/stat.h>
+#include <sys/stat.h>, 만
 #include <string.h>
 #include <fcntl.h>
 

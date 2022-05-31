@@ -15,17 +15,22 @@ void myread(char cary[]){
 
 int main(int argc,char **argv){
 
-	printf("argc=  %d\n",argc);
+	/*printf("argc=  %d\n",argc);
 	printf("argv[0] = %s\n",argv[0]);
 	printf("argv[1] = %s\n",argv[1]);
-	printf("argv[2] = %s\n",argv[2]);
+	printf("argv[2] = %s\n",argv[2]);*/
+
+	for(int i = 0; i<argc; i++){
+		printf("arg[%d] = %s\n",i,argv[i]);
+	}
+
 
 	char buf[BUFFSIZE];
 //	printf("buf = %d\n",buf);
 //	myread(buf);
 //	printf("buf[0] = %c buf[1] = %c\n",buf[0],buf[1]);
 
-	ssize_t nread;
+	ssize_t nread;	
 	int fd = open("myfile",O_RDONLY);
 
 	if(fd == -1){
@@ -37,4 +42,5 @@ int main(int argc,char **argv){
 
 	return 0;
 }
+
 
